@@ -39,7 +39,7 @@ let contacts = <div className="dropup">
         <>
 
     <div className="Header">
-            <img className="Logo" src="src\assets\mmb logo bw-24.png" alt="React" />
+            <img className="Logo" src="https://i.imgur.com/0likzaa.png" alt="React" />
     </div>
     
     <div className="buttonbox">
