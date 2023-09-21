@@ -1,66 +1,65 @@
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-function ProjectsMultislider(){
 
-    const carousel = document.querySelector(".carousel-proj")
+function ProjectsMultislider() {
+    const carouselRef = useRef<HTMLDivElement | null>(null);
+    let isSlideStart = false, prevPageX: number, prevScrollLeft: number;
 
-    let isSlideStart = false, prevPageX:number, prevScrollLeft:number;
+    useEffect(() => {
+        const carousel = carouselRef.current;
 
-    const slideStart = (e: Event) =>{
-        isSlideStart = true;
-        prevPageX = (e as MouseEvent).pageX;
-        if (carousel) {
-        prevScrollLeft = carousel.scrollLeft;
+        const slideStart = (e: MouseEvent) => {
+            isSlideStart = true;
+            prevPageX = e.pageX;
+            prevScrollLeft = carousel!.scrollLeft;
         }
 
-    }
-
-    const Slide = (e: Event) =>{
-        if(!isSlideStart) return;
-        e.preventDefault();
-        let positionDiff = (e as MouseEvent).pageX - prevPageX
-        
-        if (carousel) {
-            carousel.classList.add('dragging')
-            carousel.scrollLeft = prevScrollLeft - positionDiff;
-        
-    }
-    }
-
-    const slideStop = () =>{
-        isSlideStart = false;
-        if(carousel){
-            carousel.classList.remove('dragging')
+        const Slide = (e: MouseEvent) => {
+            if (!isSlideStart) return;
+            e.preventDefault();
+            let positionDiff = e.pageX - prevPageX;
+            carousel!.scrollLeft = prevScrollLeft - positionDiff;
         }
-    }
 
+        const slideStop = () => {
+            isSlideStart = false;
+        }
 
-    if (carousel) {
-    carousel.addEventListener("mousemove", Slide)
-    carousel.addEventListener("mousedown", slideStart)
-    carousel.addEventListener("mouseup", slideStop)
-    }
+        if (carousel) {
+            carousel.addEventListener("mousemove", Slide);
+            carousel.addEventListener("mousedown", slideStart);
+            carousel.addEventListener("mouseup", slideStop);
+        }
 
-    let firstImg = carousel?.querySelectorAll("img")[0];
+        return () => {
+            if (carousel) {
+                carousel.removeEventListener("mousemove", Slide);
+                carousel.removeEventListener("mousedown", slideStart);
+                carousel.removeEventListener("mouseup", slideStop);
+            }
+        }
+    }, []);
+
     let firstImgWidth: number;
-    
-    if (firstImg) {
-        firstImgWidth = firstImg.clientWidth ; 
-    }
 
-    const Next = (txt:string) => {
-        if(carousel){
-            if(txt == "left"){
-                carousel.scrollLeft -= firstImgWidth;
+    useEffect(() => {
+        const firstImg = carouselRef.current?.querySelectorAll("img")[0];
+    
+        if (firstImg) {
+            firstImgWidth = firstImg.clientWidth; 
+        }
+    }, []);
+
+    const Next = (txt: string) => {
+        if(carouselRef.current){
+            if(txt === "left"){
+                carouselRef.current.scrollLeft -= firstImgWidth;
             }
             else{
-                carousel.scrollLeft += firstImgWidth;
+                carouselRef.current.scrollLeft += firstImgWidth;
             }
-            // showHideIcons();
         }
-        
     }
-
-
 
     return(
     <>
@@ -70,7 +69,7 @@ function ProjectsMultislider(){
         <div className="wrapper-Proj">
         <div className="wrapper">
             <div className="leftarrowM" id="arrow" onClick= {() => Next("left")}> &#8249; </div>
-            <div  className="carousel-proj">
+            <div ref={carouselRef} className="carousel-proj">
                 
                 <img src="https://i.imgur.com/wQdIp4J.jpg" alt="" />
                 <img src="https://i.imgur.com/VmPf0Og.jpg" alt="" />
