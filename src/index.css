@@ -1,0 +1,1133 @@
+
+/* latin-ext */
+@font-face {
+  font-family: 'Pathway Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pathwaygothicone/v15/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-tRVZfTc4PlJz5.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Pathway Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pathwaygothicone/v15/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-tS1ZfTc4PlA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.Header, .Aboutleft, .contactContainer, .Mbody, .wrapper-Proj, .bannerimg, .Servicedisdiv, .Projectsdisdiv , .Mbody-Proj
+{/* background-image:linear-gradient(0deg, #31313295, #31313295), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
+background-size: 3000px; */
+background-image:linear-gradient(0deg, #00000082, #00000082), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
+background-size: 3000px;}
+
+.buttonbox, .dotsContainer, .textimg, .AboutContainer, .inputdrp option, .buttoncontact, .wrapper, .Divider, .buttonService, .rightbox,  .middlebox, .leftbox, .dropup-content a:hover
+{background-color: #121212;}
+
+.Header {
+  overflow: hidden;
+  
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  
+  text-align: center;
+  /* margin: 10px; */
+  padding: 5px;
+  
+}
+
+*{
+  margin: 0;
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+  
+}
+
+.Logo{
+  width: 12%;
+}
+
+/*  */
+/* Buttons */
+/*  */
+
+.dropbtn {
+  background-color: #3498db00;
+  color: white;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  /* font-weight: bold; */
+  font-size: 20px;
+  
+  border: none;
+  position: static;
+}
+.dropbtnLink {
+  background-color: #3498db00;
+  color: white;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+
+  font-size: 20px;
+  
+  border: none;
+  position: static;
+  text-decoration: none;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 20%;
+  padding-top: 20px;
+  padding: 15px 0;
+  
+  
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f100;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  /* min-width: 160px; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  left: -12px;
+  width: 180px;
+  
+  /* margin-left: 14vw; */
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {color: #FCB86A;
+}
+.dropup a:hover {color: #FCB86A;
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+
+@media (max-width: 1600px){
+  .dropup {
+    padding-top: 0px;
+  padding: 15px 0;
+  }
+  .dropup-content {
+    bottom: -160px;
+    background-color: #121212;;
+}
+.dropup:hover .dropup-content {
+  display: none;
+}
+}
+
+.buttonbox{
+  
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*  */
+/* Buttons DONE*/
+/*  */
+
+/*  */
+/* Slider */
+/*  */
+
+.SliderStyles{
+  height: 68vh;
+  width: 100%;
+  position: relative;
+}
+
+.SlideStyles{
+  width: 100%;
+  height: 100%;
+  opacity: 70%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg"); */
+}
+
+.leftarrow{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 32px;
+  font-size: 5vw;
+  font-weight: bolder;
+  
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightarrow{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 32px;
+  font-size: 5vw;
+  font-weight: bolder;
+
+  z-index: 1;
+  cursor: pointer;
+}
+.rightarrow:hover, .leftarrow:hover{
+  color: #ffffff;
+}
+
+.dotsContainer{
+  justify-content: center;
+  
+  display: flex;
+  position: relative;
+  
+}
+
+
+.textimg{
+  color: white;
+  width: 70%;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  font-size: 1vw;
+
+  text-align: center;
+  position:absolute; 
+
+  margin: 10% 15%;
+  box-sizing: border-box;
+  background: #313132a7;
+
+  padding: 3% 10%;
+
+  animation: fadeInAnimation ease 3s;
+
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 1000px){
+  .textimg{
+    font-size: 4vw;
+  }
+
+  .rightarrow{
+    font-size: 50px;
+  }
+
+.leftarrow{
+    font-size: 50px;
+  }
+}
+
+
+
+.fade-in {
+  animation: opac ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opac {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.dots{
+  margin: 10px 10px;
+  size: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bolder
+  
+}
+/*  */
+/* Slider DONE*/
+/*  */
+
+/*  */
+/* About Us */
+/*  */
+
+.AboutContainer{
+  /* text-align: center; */
+  display: block;
+  position: relative;
+  
+  
+}
+.abouth1{
+
+  text-align: center;
+  display: block;
+  position: relative;
+  /* top: -2vh; */
+
+  font-family: Pathway Gothic One;
+  letter-spacing: 2px;
+  
+  padding: 5px;
+  padding-bottom: 35px;
+  font-size: 9.5vh;
+  
+  color:  #ffffff;
+  
+  
+  text-underline-offset: 20%;
+}
+
+.Aboutleft{
+  display: inline-block;
+  width: 50vw;
+ 
+  
+}
+.AboutRight{
+  display: inline-block;
+  padding: 40px 40px;
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  
+}
+.AboutImg{
+  width: 25vw;
+  padding: 5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Abouttxt{
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  /* padding: 60px; */
+  padding-left: 60px;
+  margin-bottom: 10%;
+  color:  #ffffff;
+  /* text-align: justify; */
+  text-justify: inter-word;
+  
+  overflow: auto;
+  text-align:justify;
+
+  font-size: 1.5vw
+}
+
+
+
+@media (max-width: 1700px) {
+  .AboutContainer{
+    text-align: center;
+    display: block;
+    position: relative;
+    
+  }
+  .abouth1{
+  
+    text-align: center;
+    display: block;
+    position: relative;
+  
+    font-family: Pathway Gothic One;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    font-size: 4.5vh;
+    color:  #ffffff;
+    
+    text-underline-offset: 20%;
+    font-weight:lighter;
+  }
+  
+  .Aboutleft{
+    display: inline-block;
+    width: 100%;
+   
+    
+  }
+  .AboutRight{
+    display: inline-block;
+    padding: 40px 20px;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0);
+    
+  }
+  .AboutImg{
+    width: 25vw;
+    padding: 5vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Abouttxt{
+    font-family: Pathway Gothic One;
+    letter-spacing: 1.5px;
+    padding: 60px;
+    color:  #ffffff;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: auto;
+    text-align:justify;
+    margin-bottom: 0%;
+    font-size: 20px
+    
+  
+  }
+
+}
+/*  */
+/* ContactUs */
+/*  */
+
+.contactContainer{
+  text-align: center;
+  display: block;
+  position: relative;
+  /* top: -2vh; */
+  
+}
+  
+
+.contactContainer{
+  /* background-image:linear-gradient(0deg, #313132d2, #313132c6), url("https://www.thespruce.com/thmb/C-WzNDjk0lVGAlnTjZ1gox9qniA=/2152x0/filters:no_upscale():max_bytes(150000):strip_icc()/Buildingdesigns-GettyImages-912482942-db55b3af711044a3a42ad1040c6711a9.jpg"); */
+ 
+}
+
+.contactleft{
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding: 10px 40px;
+  vertical-align:top;
+  width: 38%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+
+.inputtxt{
+  display: flex;
+  margin: 14px auto;
+  width: 100%;
+  height: 3vh;
+  font-size: 1vw;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.427);
+  padding: 10px;
+  border: #ffffff;
+  
+  
+  /* margin: 10px; */
+  
+}
+.inputtxt::placeholder{
+  color: white;
+}
+
+.inputdrp{
+  display: flex;
+  margin: 1.2vh auto;
+  width: 38.5vw;
+  height: 5vh;
+  font-size: 1vw;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  background-color: rgba(255, 255, 255, 0.427);
+  padding: 10px;
+  border: #ffffff;
+  color:  #ffffff;
+}
+
+.inputdrp option{
+  background-color: #313132;
+}
+
+#projdetail{
+  height: 16vh;
+  resize: none;
+}
+
+
+.visith1{
+  
+
+  text-align: center;
+  display: block;
+  position: relative;
+  
+  padding: 10px;
+  font-family: Pathway Gothic One;
+  letter-spacing: 2px;
+  
+  font-size: 9.5vh;
+  
+  color:  #ffffff;
+  
+  text-underline-offset: 20%;
+  
+  
+}
+
+.buttoncontact{
+  display: inline-block;
+
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  
+  font-size: 2.5vh;
+
+  border: 3px solid rgb(253, 253, 253);
+  
+  background-color: #ffffff;
+ 
+  vertical-align:bottom;
+  margin: 30px auto;
+  width: 80%;
+
+  cursor: pointer;
+}
+
+.buttoncontact:hover{
+  color:  #ffffff;
+  background-image:linear-gradient(0deg, #31313295, #31313295), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
+  
+  /* background-color: white; */
+}
+
+.contactcenter{
+  padding: 10PX;
+
+  
+}
+
+@media (max-width: 1000px) {
+  .contactContainer{
+    text-align: center;
+    
+    position: relative;
+    
+    
+  }
+
+  .contactleft{
+    display: block;
+    /* border: 1px solid red; */
+    
+    margin: auto;
+    width: 75%;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+
+  .inputdrp{
+    display: block;
+    width:104%;
+    font-size: larger;
+    font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+    background-color: rgb(255, 255, 255);
+    
+    border: #ffffff;
+    color:  #6D6E71;
+  }
+  
+}
+
+/*  */
+/* ContactUs DONE*/
+/*  */
+
+/*  */
+/* Services*/
+/*  */
+
+
+.Mbody{
+display: block;
+padding: 3% 10%;
+align-items: center;
+justify-content: center;
+
+
+
+
+}
+.wrapper{
+max-width: 100vw;
+
+
+position: relative;
+padding: 2%;
+
+
+}
+
+.Mbody .wrapper{
+  filter: drop-shadow(15px 10px 4px #00000091);
+}
+.wrapper .carousel{
+  
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  
+}
+
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+  pointer-events: none;
+}
+
+.carousel img{
+
+  height: 40vh;
+  object-fit: cover;
+  width: calc(100%/4);
+  margin-left: 14px;
+
+}
+
+@media (max-width: 1000px) {
+  
+  .carousel img{ 
+    width: calc(100%/1);
+  }
+}
+
+@media (max-width: 550px) {
+  
+  .carousel img{ 
+    width: 100%;
+  }
+}
+
+
+.wrapper #arrow{
+  top: 43%;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.2rem;
+  background: #ffffff;
+  font-weight: 1000;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50%;
+  transform: translateY(-0%);
+}
+
+.wrapper #arrow:first-child{
+  left: -20px
+}
+
+.wrapper #arrow:last-child{
+  right: -25px;
+}
+
+.Divider{
+  height: 45px;
+  
+}
+
+.servicesh1{
+
+  text-align: center;
+  display: block;
+  position: relative;
+  
+
+  font-family: Pathway Gothic One;
+  letter-spacing: 2px;
+  
+  font-size: 9.5vh;
+  
+  color:  #ffffff;
+  
+  text-underline-offset: 20%;
+  
+}
+
+.servicesinfo{
+
+  text-align: center;
+  display: block;
+  position: relative;
+  
+
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  padding: 20px;
+  font-size: 2vw;
+  color:  #ffffff;
+  
+  /* text-decoration:underline; */
+  text-underline-offset: 20%;
+  font-weight:lighter;
+}
+
+.buttonService{
+  display: inline-block;
+
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  
+  font-size: 2.5vh;
+
+  border: 3px solid rgb(253, 253, 253);
+  
+  background-color: #ffffff;
+ 
+  vertical-align:bottom;
+  margin: 12px auto;
+  width: 100%;
+
+  cursor: pointer;
+
+  /* filter: drop-shadow(10px 5px 5px #ffffff4a); */
+}
+
+.buttonService:hover{
+  color:  #ffffff;
+  background-image:linear-gradient(0deg, #000000ac, #000000ac), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
+  
+  
+  /* background-color: white; */
+}
+
+
+/* .carousel img:first-child{
+
+  margin-left:1000px
+} */
+
+/*  */
+/* Service Slider DONE*/
+/*  */
+
+
+/*  */
+/* Project Slider */
+/*  */
+
+.wrapper .carousel-proj{
+  
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  
+  
+}
+
+.carousel-proj.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel-proj.dragging img{
+  pointer-events: none;
+}
+
+.carousel-proj img{
+
+  height: 90vh;
+  object-fit: cover;
+  width: calc(100%/1);
+  margin-left: 14px;
+  background-color: rgb(255, 255, 255);
+  opacity: 100%;
+
+}
+
+@media (max-width: 1000px) {
+  
+  .carousel-proj img{ 
+    width: calc(100%/1);
+  }
+}
+
+@media (max-width: 550px) {
+  
+  .carousel-proj img{ 
+    width: 100%;
+  }
+}
+
+.Mbody-Proj{
+  display: block;
+  padding: 2% 3%;
+  align-items: center;
+  justify-content: center;
+  opacity: 93%;
+  
+
+}
+
+.wrapper-Proj{
+ 
+  width: 100%;
+  /* padding: 3vw; */
+}
+
+.wrapper-Proj .wrapper {
+  background-color: #ffffff00;
+}
+
+.carousel-proj{
+  opacity: 100%;
+}
+
+.buttonServiceProject{
+  display: flex;
+  justify-content: center;
+
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  
+  font-size: 2.5vh;
+
+  border: 3px solid rgb(253, 253, 253);
+  
+  background-color: #ffffff;
+ 
+  /* vertical-align:bottom; */
+  /* vertical-align: center; */
+  margin: 12px auto;
+  width: 85%;
+
+  cursor: pointer;
+
+  filter: drop-shadow(15px 10px 3px #00000091);
+  text-decoration: none;
+}
+
+.buttonServiceProject:hover{
+  color:  #ffffff;
+  background-image:linear-gradient(0deg, #000000ac, #000000ac), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
+ 
+  
+  /* background-color: white; */
+}
+
+/*  */
+/* Project Slider */
+/*  */
+
+/*  */
+/* Banner */
+/*  */
+.banner{
+   height: 48vh;
+  width: 100%;
+  position: relative;
+}
+
+.bannerimg{
+  width: 100%;
+  height: 100%;
+  opacity: 70%;
+  background-position: center;
+  background-size: cover;
+ 
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.textimg-banner{
+  color: white;
+  width: 60%;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  font-size: 45px;
+
+  text-align: center;
+  position:absolute; 
+  
+
+  margin: 3% ;
+  box-sizing: border-box;
+  background: #313132a7;
+
+  padding: 2% ;
+
+  animation: fadeInAnimation ease 3s;
+
+  animation-fill-mode: forwards;
+  
+}
+
+
+/*  */
+/* Banner Done*/
+/*  */
+
+/*  */
+/* Service Display */
+/*  */
+
+.Servicedisdiv{
+  text-align: center;
+  display: block;
+  position: relative;
+
+  
+}
+
+.servtxt{
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  /* padding: 60px; */
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+
+  color:  #ffffff;
+  text-align: justify;
+  text-justify: inter-word;
+  overflow: auto;
+  text-align:justify;
+  text-align: center;
+  font-size: 20px
+}
+
+.servicehr{
+  margin-bottom: 2%;
+}
+
+.servimages{
+  width: 60%;
+  /* padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3%;
+  padding-bottom: 2%; */
+  display: inline-block;
+}
+
+.simg{
+  display: inline-block;
+  padding: 1%;
+  width: 30%;
+}
+
+
+
+@media (max-width: 1000px) {
+  
+  .servimages{
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .simg{
+    display: inline-block;
+    padding: 1%;
+    width: 40%;
+  }
+}
+
+/*  */
+/* Service Display Done*/
+/*  */
+
+/*  */
+/* Projects Display */
+/*  */
+
+.Projectsdisdiv{
+  text-align: center;
+  display: block;
+  position: relative;
+ 
+  /* background-size: 200%; */
+}
+
+.projecttxt{
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+  /* padding: 60px; */
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+
+  color:  #ffffff;
+  text-align: justify;
+  text-justify: inter-word;
+  overflow: auto;
+  text-align:justify;
+  text-align: center;
+  font-size: 20px
+}
+
+.projectshr{
+  margin-bottom: 2%;
+}
+
+.projectsimages{
+  width: 60%;
+  /* padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3%; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: inline-block;
+  background-color: #ffffff39;
+}
+
+.pimg{
+  display: inline-block;
+  padding: 1%;
+  width: 40%;
+  /* height: 40vh; */
+  transition:transform 0.25s ease;
+}
+
+.pimg:hover {
+  -webkit-transform:scale(1.5);
+  transform:scale(1.5);
+}
+
+
+@media (max-width: 1000px) {
+  
+  .projectsimages{
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .pimg{
+    display: inline-block;
+    padding: 1%;
+    width: 40%;
+  }
+}
+
+
+/*  */
+/* Projects Display Done*/
+/*  */
+
+/*  */
+/* Bottom*/
+/*  */
+.boxes{
+  
+  margin-top: -20px
+}
+.LogoEnd{
+  width:15%;
+  padding-left: 25%;
+}
+.leftbox {
+  float:left;
+
+  width:45%;
+  height:40vh;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Pathway Gothic One;
+  text-align: center;
+  letter-spacing: 1.5px;
+  
+}
+
+.leftbox p{
+  padding-left: 42%;
+  width: 40%;
+}
+.middlebox{
+  float:left;
+ 
+  width:20%;
+  height:40vh;
+  font-family: Pathway Gothic One;
+  
+}
+.rightbox{
+  float:right; 
+  
+  width:35%;
+  height:40vh;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Pathway Gothic One;
+  /* text-align: center; */
+  letter-spacing: 1.5px;
+}
+
+.bottombtnLink{
+  background-color: #3498db00;
+  color: white;
+  font-family: Pathway Gothic One;
+  letter-spacing: 1.5px;
+
+  font-size: 20px;
+  padding: 20px;
+
+  /* border: none;
+  position: static; */
+  text-decoration: none;
+}
+
+/*  */
+/* Bottom Done*/
+/*  */
+
+/* @media (max-width: 1000px) {
+  div {
+      background: yellow;
+  }
+} */
