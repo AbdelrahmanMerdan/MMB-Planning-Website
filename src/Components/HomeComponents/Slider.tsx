@@ -95,7 +95,8 @@ const texts = [
 
         <div className="dotsContainer">
                 {slides.map((slide, slideindex) => (
-                    <div key={slideindex} className="dots"
+                    <div key={slideindex} 
+                        className={`dots ${slide === slide ? 'active' : ''}`}
                     onClick={() => goToSlide(slideindex)}
                     > &#8226; </div>
                 ))}
