@@ -31,16 +31,13 @@ background-size: 3000px;}
   background-color: rgb(255, 255, 255);
   
   text-align: center;
-  /* margin: 10px; */
   padding: 5px;
   
 }
 
 *{
   margin: 0;
-  /* padding: 0; */
-  /* box-sizing: border-box; */
-  
+  overflow-x: hidden;
 }
 
 .Logo{
@@ -56,7 +53,7 @@ background-size: 3000px;}
   color: white;
   font-family: Pathway Gothic One;
   letter-spacing: 1.5px;
-  /* font-weight: bold; */
+
   font-size: 20px;
   
   border: none;
@@ -95,8 +92,6 @@ background-size: 3000px;}
   background-color: #f1f1f100;
   font-family: Pathway Gothic One;
   letter-spacing: 1.5px;
-  /* min-width: 160px; */
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
   left: -12px;
   width: 180px;
@@ -171,7 +166,7 @@ background-size: 3000px;}
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url("https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg"); */
+  
 }
 
 .leftarrow{
@@ -427,11 +422,6 @@ background-size: 3000px;}
 }
   
 
-.contactContainer{
-  /* background-image:linear-gradient(0deg, #313132d2, #313132c6), url("https://www.thespruce.com/thmb/C-WzNDjk0lVGAlnTjZ1gox9qniA=/2152x0/filters:no_upscale():max_bytes(150000):strip_icc()/Buildingdesigns-GettyImages-912482942-db55b3af711044a3a42ad1040c6711a9.jpg"); */
- 
-}
-
 .contactleft{
   display: inline-block;
   /* border: 1px solid red; */
@@ -454,9 +444,6 @@ background-size: 3000px;}
   background-color: rgba(255, 255, 255, 0.427);
   padding: 10px;
   border: #ffffff;
-  
-  
-  /* margin: 10px; */
   
 }
 .inputtxt::placeholder{
@@ -530,8 +517,7 @@ background-size: 3000px;}
 .buttoncontact:hover{
   color:  #ffffff;
   background-image:linear-gradient(0deg, #31313295, #31313295), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
-  
-  /* background-color: white; */
+
 }
 
 .contactcenter{
@@ -551,7 +537,6 @@ background-size: 3000px;}
 
   .contactleft{
     display: block;
-    /* border: 1px solid red; */
     
     margin: auto;
     width: 75%;
@@ -568,6 +553,9 @@ background-size: 3000px;}
     
     border: #ffffff;
     color:  #6D6E71;
+  }
+  .inputtxt{
+    font-size: 20px;
   }
   
 }
@@ -663,11 +651,11 @@ padding: 2%;
 }
 
 .wrapper #arrow:first-child{
-  left: -20px
+  left: 20px
 }
 
 .wrapper #arrow:last-child{
-  right: -25px;
+  right: 20px
 }
 
 .Divider{
@@ -705,8 +693,7 @@ padding: 2%;
   padding: 20px;
   font-size: 2vw;
   color:  #ffffff;
-  
-  /* text-decoration:underline; */
+ 
   text-underline-offset: 20%;
   font-weight:lighter;
 }
@@ -730,31 +717,14 @@ padding: 2%;
 
   cursor: pointer;
 
-  /* filter: drop-shadow(10px 5px 5px #ffffff4a); */
 }
 
 .buttonService:hover{
   color:  #ffffff;
   background-image:linear-gradient(0deg, #000000ac, #000000ac), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
   
-  
-  /* background-color: white; */
+
 }
-
-
-/* .carousel img:first-child{
-
-  margin-left:1000px
-} */
-
-/*  */
-/* Service Slider DONE*/
-/*  */
-
-
-/*  */
-/* Project Slider */
-/*  */
 
 .wrapper .carousel-proj{
   
@@ -814,7 +784,7 @@ padding: 2%;
 .wrapper-Proj{
  
   width: 100%;
-  /* padding: 3vw; */
+
 }
 
 .wrapper-Proj .wrapper {
@@ -838,9 +808,7 @@ padding: 2%;
   border: 3px solid rgb(253, 253, 253);
   
   background-color: #ffffff;
- 
-  /* vertical-align:bottom; */
-  /* vertical-align: center; */
+
   margin: 12px auto;
   width: 85%;
 
@@ -853,18 +821,9 @@ padding: 2%;
 .buttonServiceProject:hover{
   color:  #ffffff;
   background-image:linear-gradient(0deg, #000000ac, #000000ac), url("https://assets.isu.pub/document-structure/221020194414-f037d3530b27fab7f02e134f375a7fef/v1/41d3e525ef78d91efde51d4103c9cdb3.jpeg");
- 
-  
-  /* background-color: white; */
+
 }
 
-/*  */
-/* Project Slider */
-/*  */
-
-/*  */
-/* Banner */
-/*  */
 .banner{
    height: 48vh;
   width: 100%;
@@ -908,15 +867,6 @@ padding: 2%;
   
 }
 
-
-/*  */
-/* Banner Done*/
-/*  */
-
-/*  */
-/* Service Display */
-/*  */
-
 .Servicedisdiv{
   text-align: center;
   display: block;
@@ -928,7 +878,7 @@ padding: 2%;
 .servtxt{
   font-family: Pathway Gothic One;
   letter-spacing: 1.5px;
-  /* padding: 60px; */
+
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 3%;
@@ -949,10 +899,7 @@ padding: 2%;
 
 .servimages{
   width: 60%;
-  /* padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 3%;
-  padding-bottom: 2%; */
+
   display: inline-block;
 }
 
@@ -978,20 +925,12 @@ padding: 2%;
   }
 }
 
-/*  */
-/* Service Display Done*/
-/*  */
-
-/*  */
-/* Projects Display */
-/*  */
 
 .Projectsdisdiv{
   text-align: center;
   display: block;
   position: relative;
- 
-  /* background-size: 200%; */
+
 }
 
 .projecttxt{
@@ -1018,9 +957,7 @@ padding: 2%;
 
 .projectsimages{
   width: 60%;
-  /* padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 3%; */
+
   padding-top: 5%;
   padding-bottom: 5%;
   display: inline-block;
@@ -1031,7 +968,7 @@ padding: 2%;
   display: inline-block;
   padding: 1%;
   width: 40%;
-  /* height: 40vh; */
+
   transition:transform 0.25s ease;
 }
 
@@ -1055,14 +992,10 @@ padding: 2%;
   }
 }
 
+/*  */
+/* End*/
+/*  */
 
-/*  */
-/* Projects Display Done*/
-/*  */
-
-/*  */
-/* Bottom*/
-/*  */
 .boxes{
   
   margin-top: -20px
@@ -1104,7 +1037,7 @@ padding: 2%;
   color: #ffffff;
   font-size: 20px;
   font-family: Pathway Gothic One;
-  /* text-align: center; */
+
   letter-spacing: 1.5px;
 }
 
@@ -1117,17 +1050,63 @@ padding: 2%;
   font-size: 20px;
   padding: 20px;
 
-  /* border: none;
-  position: static; */
   text-decoration: none;
 }
 
-/*  */
-/* Bottom Done*/
-/*  */
-
-/* @media (max-width: 1000px) {
-  div {
-      background: yellow;
+@media (max-width: 900px){
+  .boxes{
+  
+    margin-top: -20px
   }
-} */
+
+  .leftbox {
+    float:left;
+  
+    width:45%;
+    height:30vh;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Pathway Gothic One;
+    
+    text-align: center;
+    letter-spacing: 1.5px;
+    
+  }
+  
+  .leftbox p{
+    padding-left: 0%;
+    width: 100%;
+  }
+  .middlebox{
+    float:left;
+   
+    width:20%;
+    height:30vh;
+    font-family: Pathway Gothic One;
+    
+    
+  }
+  .rightbox{
+    float:right; 
+    
+    width:35%;
+    height:30vh;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Pathway Gothic One;
+    
+    letter-spacing: 1.5px;
+  }
+
+  .bottombtnLink{
+    background-color: #3498db00;
+    color: white;
+    font-family: Pathway Gothic One;
+    letter-spacing: 1.5px;
+  
+    font-size: 15px;
+    padding: 20px;
+  
+    text-decoration: none;
+  }
+}
