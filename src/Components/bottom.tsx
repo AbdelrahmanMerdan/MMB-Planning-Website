@@ -26,7 +26,7 @@ function Bottomend(){
     <div className = "rightbox">
         <br></br>
         <b>Phone:</b><br></br><br></br>
-        &#40;647&#41; - 705 - 1291<br></br><br></br>
+        &#40;647&#41; - 700 - 0000<br></br><br></br>
         <b>Email:</b><br></br><br></br>
         MMBPlanning@gmail.com
     </div>
